@@ -46,49 +46,51 @@
 <h3 align="center" > Login In Button Event </h3>
   
 ```
-		btn_manager_login.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				if(txt_manager_mail.getText().length() == 0 || txt_manager_password.getText().length() == 0) {
-					Helper.showMessage("Lütfen tüm alanları doldurunuz!");
-				}else {
-					
-					try {
-						Connection con = connection.connDb();
-						Statement st = con.createStatement();
-						ResultSet myRs = st.executeQuery("SELECT * FROM admins");
-						boolean kontrol = false;
-						while(myRs.next()) {
-							if(txt_manager_mail.getText().equals(myRs.getString("admin_mail")) && txt_manager_password.getText().equals(myRs.getString("password"))) {
-								kontrol = true;
-								Instructor instructor = new Instructor();
-								instructor.setId(myRs.getInt("id"));
-								instructor.setFirst_name(myRs.getString("first_name"));
-								instructor.setLast_name(myRs.getString("last_name"));
-								instructor.setMail(instructor.getFirst_name() + "." + instructor.getLast_name() + "@edu.tr");
-								instructor.setIdentityNumber(myRs.getString("tc_no"));
-								instructor.setPassword(myRs.getString("password"));
-								System.out.println("Hoşgeldiniz " + instructor.getFirst_name());
-								ManagerGUI managerGUI = new ManagerGUI(instructor);
-								managerGUI.setVisible(true);
-								dispose();
-							}
-						}
-						if(kontrol == false) {
-							Helper.showMessage("Girdiğiniz bilgiler yanlıştır!");
-							txt_manager_mail.setText("");
-							txt_manager_password.setText("");
-						}
-						
-					} catch (SQLException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
+btn_manager_login.addActionListener(new ActionListener() {
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (txt_manager_mail.getText().length() == 0 || txt_manager_password.getText().length() == 0) {
+			Helper.showMessage("Lütfen tüm alanları doldurunuz!");
+		} else {
+
+			try {
+				Connection con = connection.connDb();
+				Statement st = con.createStatement();
+				ResultSet myRs = st.executeQuery("SELECT * FROM admins");
+				boolean kontrol = false;
+				while (myRs.next()) {
+					if (txt_manager_mail.getText().equals(myRs.getString("admin_mail"))
+							&& txt_manager_password.getText().equals(myRs.getString("password"))) {
+						kontrol = true;
+						Instructor instructor = new Instructor();
+						instructor.setId(myRs.getInt("id"));
+						instructor.setFirst_name(myRs.getString("first_name"));
+						instructor.setLast_name(myRs.getString("last_name"));
+						instructor.setMail(
+								instructor.getFirst_name() + "." + instructor.getLast_name() + "@edu.tr");
+						instructor.setIdentityNumber(myRs.getString("tc_no"));
+						instructor.setPassword(myRs.getString("password"));
+						System.out.println("Hoşgeldiniz " + instructor.getFirst_name());
+						ManagerGUI managerGUI = new ManagerGUI(instructor);
+						managerGUI.setVisible(true);
+						dispose();
 					}
 				}
-				
+				if (kontrol == false) {
+					Helper.showMessage("Girdiğiniz bilgiler yanlıştır!");
+					txt_manager_mail.setText("");
+					txt_manager_password.setText("");
+				}
+
+			} catch (SQLException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
 			}
-		});
+		}
+
+	}
+});
   
 ```
 
@@ -341,8 +343,7 @@ Finally, the fields are cleared.
   <p align="center">
 <img src="https://user-images.githubusercontent.com/79863003/150649571-99ff801d-be34-45bc-b5ad-d8d188713a54.png" alt="">
   </p>
-<h6 align="center"><i>-updated table-<i/></p>
-
+<h6 align="center"><i>-updated table-</i></p>
 
 <h3 align="center">addInstructor Method works in If Block (eğitmen veritabanına eklenir)</h3>
   
