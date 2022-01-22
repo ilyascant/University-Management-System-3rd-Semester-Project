@@ -28,9 +28,9 @@
 
 #### We decided to do this project because we thought it was a project where we could better understand Database and GUI, Constructor, inheritance processes and improve ourselves.
 <br/>
-<h3>All Classes Of Project  </h3>
-<h6> <i>Total Class Count: 17 - Total line Count: 3400+</i></h6>
-<img width="200" src="https://i.imgur.com/lCdVlNW.png" alt="ALL CLASSES">
+<h3 align="center">All Classes Of Project  </h3>
+<h6 align="center"> <i>Total Class Count: 17 - Total line Count: 3400+</i></h6>
+<p align="center"><img width="200" src="https://i.imgur.com/lCdVlNW.png" alt="ALL CLASSES"></p>
 
 
 <h3 align="center"> Login Panel </h3>
@@ -284,10 +284,10 @@ public class Department extends Faculty{
 	}
 ```
   
-<h4>Bu sınıflarda encapsulation tekniği kullanılmıştır.</h4>
+<h4  align="center">Bu sınıflarda encapsulation tekniği kullanılmıştır.</h4>
 
 
-<img src="https://user-images.githubusercontent.com/79863003/150649440-1d33a460-c695-428a-b479-22fe4b26820e.png" alt="">
+<p  align="center"><img src="https://user-images.githubusercontent.com/79863003/150649440-1d33a460-c695-428a-b479-22fe4b26820e.png" alt=""></p>
 <br/>
 <br/>
 <br/>
