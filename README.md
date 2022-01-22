@@ -40,11 +40,10 @@
 
 <h3 align="center"> Panel that Administrator See </h3>
   <p align="center">
-  
-<img src="https://i.imgur.com/NP7EHHO.png" alt="Panel that Administrator See">
+<img src="https://user-images.githubusercontent.com/79863003/150651250-95ba1450-2d13-45bd-af7b-39fa73efb28f.png" alt="Panel that Administrator See">
 </p>
 
-<h3 align="center" > Giriş yap butonunun eventi </h3>
+<h3 align="center" > Login In Button Event </h3>
   
 ```
 		btn_manager_login.addActionListener(new ActionListener() {
@@ -93,9 +92,9 @@
   
 ```
 
-<h4 >Daha öncesinde veritabanından oluşturulan öğrenci listesi (getAllStudents) stream().filter() ile filtrelenir ve istenilen öğrenci nesnesi bulunur. Sonrasında giriş sağlanır. </h4>
+<h4 >The student list (getAll Students) previously created from the database is filtered with stream().filter() and the desired student object is found. Afterwards, login is provided.</h4>
 
-<h3  align="center">Veritabanından oluşturulan öğrenci listesi (getAllStudents)</h3>
+<h3  align="center">Student list created according to Database (getAllStudents)</h3>
   
 ```
 public ArrayList<Student> getAllStudents() {
@@ -123,9 +122,9 @@ public ArrayList<Student> getAllStudents() {
 	}
 ```
   
-<h4>Veritabanındaki bilgiler ilgili sorguyla tek tek çekilir ve önceden oluşturulan obje kullanılarak nesne oluşturulur ve bu nesne bir listeye daha sonra kullanılmak üzere atanır.</h4>
+<h4>The information in the database is retrieved one by one with the relevant query, and an object is created using the previously created object, and this object is assigned to a list for later use.</h4>
 
-<h3 align="center">Person sınıfının constructor metotları</h3>
+<h3 align="center">Person Class Constructor Methods</h3>
   
 ```
 public class Person {
@@ -159,7 +158,7 @@ public class Person {
 ```
   
 
-<h3 align="center">Persondan miras alan Student sınıfı</h3>
+<h3 align="center">Student Class Inheriting From Person</h3>
   
 ```
 public class Student extends Person {
@@ -202,7 +201,7 @@ public class Student extends Person {
   
 ```
 
-<h3 align="center">Persondan miras alan Instructor sınıfı</h3>
+<h3 align="center">Instructor class inheriting from Person</h3>
   
 ```
 public class Instructor extends Person{
@@ -236,7 +235,7 @@ public class Instructor extends Person{
 	}
 ```
 
-<h3 align="center">Faculty sınıfı</h3>
+<h3 align="center">Faculty Class</h3>
   
 ```
 public class Faculty {
@@ -259,7 +258,7 @@ public class Faculty {
 		this.facultyName = facultyName;
 	}
 ```
-<h3 align="center">Faculty sınıfından miras alan Department sınıfı</h3>
+<h3 align="center">Department class inheriting from Faculty</h3>
   
 ```
 public class Department extends Faculty{
@@ -284,7 +283,7 @@ public class Department extends Faculty{
 	}
 ```
   
-<h4  align="center">Bu sınıflarda encapsulation tekniği kullanılmıştır.</h4>
+<h4  align="center">Encapsulation is used in these classes.</h4>
 
 
 <p  align="center"><img src="https://user-images.githubusercontent.com/79863003/150649440-1d33a460-c695-428a-b479-22fe4b26820e.png" alt=""></p>
@@ -333,10 +332,10 @@ JButton btn_add_instructor = new JButton("Ekle");
 ```
                                                                   
 <h4>
-	Eğitmen ekleme butonuna basıldığında yandaki kod çalışır.
-	Bu koda göre ilk olarak alanların dolu olduğu kontrol edilir. Daha sonrasında alanlar doluysa ilgili nesneye veriler setter ile atanır.
-	Sonra if bloğunda eğitmeni veritabanına ekleme metodu çalışır. Buradan dönen boolean tipindeki sonuca göre tablo güncellenir ve kullanıcı bilgilendirilir.
-	En son olarak alanlar boşaltılır.
+	The code above works when the add instructor button is pressed.
+According to this code, it is first checked that the fields are filled. Afterwards, if the fields are full, the data is assigned to the related object with a setter.
+Then the method of adding the instructor to the database works in the if block. The table is updated according to the boolean type result returned from here and the user is informed.
+Finally, the fields are cleared.
 </h4>
 
   <p align="center">
@@ -345,7 +344,7 @@ JButton btn_add_instructor = new JButton("Ekle");
 <h6 align="center"><i>-güncellenen tablo-<i></p>
 
 
-<h3 align="center">If bloğunda çalışan addInstructor metodu (eğitmen veritabanına eklenir)</h3>
+<h3 align="center">addInstructor Method works in If Block (eğitmen veritabanına eklenir)</h3>
   
 ```
 public boolean addInstructor(String instructorFirstName, String instructorLastName, String identityNumber, String degree, String facultyName, String departmentName) {
@@ -372,7 +371,7 @@ public boolean addInstructor(String instructorFirstName, String instructorLastNa
 	}
 ```
 
-<h3 align="center">updateInstructor metodu tabloyu günceller</h3>
+<h3 align="center">updateInstructor Method Updates the Table</h3>
   
 ```
 public void updateInstructorModel() {
@@ -394,7 +393,7 @@ public void updateInstructorModel() {
 	}
 ```
 
-<h3 align="center">Instructor (Eğitmen) tablosunu oluşturan ve değerlerini atayan tablo modeli</h3>
+<h3 align="center">Table Model that creates and assigning values Instructor table </h3>
   
 ```
 // ********** INSTRUCTOR Model **********
@@ -427,48 +426,48 @@ public void updateInstructorModel() {
   </p>
 <h6 align="center">
 	<i>
-		-oluşturulan tablo modeli -</i>
+		-generated table model-</i>
 </h6>
 
 <h3 align="center">
-	Fakülte Yönetim Paneli
+	Faculty Management Panel
 </h3>
   <p align="center">
 <img src="https://user-images.githubusercontent.com/79863003/150649670-9ae92ed4-fe92-4d7c-9122-ae90494a8f88.png" alt="">
   </p>
-<h4>Yönetici bu panel sayesinde sistemde bulunan fakülte ve departmanları görüntüleyebilir. Bunlarla birlikte sisteme yeni fakülte veya bölüm ekleyebilir. Eğer atanmamış bölüm varsa “Atanabilir bölümler” menüsünden seçerek ilgili fakülteye atamasını gerçekleştirebilir.</h4>
+<h4>With this panel, the administrator can view the faculties and departments in the system. Along with these, new faculties or departments can be added to the system. If there is an unassigned department, it can be assigned to the relevant faculty by selecting it from the "Assignable departments" menu..</h4>
 
 <h3 align="center">
-	Öğrenci Yönetim Paneli
+	Student Management Panel
 </h3>
   <p align="center">
 <img src="https://user-images.githubusercontent.com/79863003/150649679-b67216e2-327f-4406-9f92-1ce8e0cb8875.png" alt="">
   </p>
 
-<h4>Yönetici bu panelde öğrencileri görüntüleyebilir, var olan öğrenciler üzerinde güncelleme veya silme yapabilir bunların yanı sıra yeni öğrenci eklemesi de yapabilir.</h4>
+<h4>In this panel, the administrator can view students, update or delete existing students, as well as adding new students..</h4>
 
 <h3 align="center">
-	Ders Yönetim Paneli
+	Lecture Management Panel
 </h3>
   <p align="center">
 <img src="https://user-images.githubusercontent.com/79863003/150649695-7335ec69-d280-4edf-9b9a-be1026906e7e.png" alt="">
   </p>
 
-<h4>Bu panelde yönetici var olan öğrenciyi bir derse atayabilir, sisteme yeni ders eklemesi yapabilir ya da var olan ders üzerinde güncelleme, silme işlemleri yapabilir.</h4>
+<h4>In this panel, the administrator can assign an existing student to a lecture, add a new lecture to the system, or update or delete an existing lecture.</h4>
 
 <h3 align="center">
-	Öğrenci Paneli
+	Student Panel
 </h3>
   <p align="center">
 <img src="https://user-images.githubusercontent.com/79863003/150649702-1fa0ff6a-01cd-4589-b9fa-8049da4c6a31.png" alt="">
   </p>
 
 <h4>
-	Yönetici tarafından sisteme eklenen öğrenci sisteme giriş yaptıktan sonra bu ekranda ders ve profil bilgilerini görüntüleyebilir.
+	The student added to the system by the administrator can view the lectures and profile information on this screen after logging in to the system.
 </h4>
 
 
-<h3 align="center">KAYNAKÇA:<h3>
+<h3 align="center">SOURCES:<h3>
 
 https://www.youtube.com/channel/UCQKEJxT5iiHCWQqT68gOCOg 
 
