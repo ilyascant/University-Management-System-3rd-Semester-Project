@@ -1,4 +1,4 @@
-## University Management System 3rd Semester Project
+<h2 align="center">University Management System 3rd Semester Project</h2>
 <p align="center"><i>Project that we made as a group in 3rd semester<i></p>
 
 <br/>
