@@ -460,7 +460,8 @@ public void updateInstructorModel() {
 	Student Panel
 </h3>
   <p align="center">
-<img src="https://user-images.githubusercontent.com/79863003/150649702-1fa0ff6a-01cd-4589-b9fa-8049da4c6a31.png" alt="">
+<img src="https://user-images.githubusercontent.com/79863003/150654187-301c174a-f472-47dc-8909-8990430adff5.png" alt="">
+
   </p>
 
 <h4>
