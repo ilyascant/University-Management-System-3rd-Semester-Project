@@ -341,7 +341,7 @@ Finally, the fields are cleared.
   <p align="center">
 <img src="https://user-images.githubusercontent.com/79863003/150649571-99ff801d-be34-45bc-b5ad-d8d188713a54.png" alt="">
   </p>
-<h6 align="center"><i>-güncellenen tablo-<i></p>
+<h6 align="center"><i>-updated table-<i/></p>
 
 
 <h3 align="center">addInstructor Method works in If Block (eğitmen veritabanına eklenir)</h3>
