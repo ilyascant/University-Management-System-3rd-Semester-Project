@@ -470,30 +470,8 @@ public void updateInstructorModel() {
 
 <h3 align="center">SOURCES:<h3>
 
-<h5>https://www.youtube.com/channel/UCQKEJxT5iiHCWQqT68gOCOg </h5>
+<h5 align="center">https://www.youtube.com/channel/UCQKEJxT5iiHCWQqT68gOCOg </h5>
 
-<h5>https://stackoverflow.com/questions/299495/how-to-add-an-image-to-a-jpanel </h5>
+<h5 align="center">https://stackoverflow.com/questions/299495/how-to-add-an-image-to-a-jpanel </h5>
 
-<h5>https://www.w3schools.blog/java-8-stream-filter-example</h5>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h5 align="center">https://www.w3schools.blog/java-8-stream-filter-example</h5>
