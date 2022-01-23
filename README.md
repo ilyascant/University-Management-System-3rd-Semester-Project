@@ -344,7 +344,7 @@ Finally, the fields are cleared.
   </p>
 <h6 align="center"><i>-updated table-</i></p>
 
-<h3 align="center">addInstructor Method works in If Block (eğitmen veritabanına eklenir)</h3>
+<h3 align="center">addInstructor Method works in If Block (The Instructor is added to Database)</h3>
   
 ```
 public boolean addInstructor(String instructorFirstName, String instructorLastName, String identityNumber, String degree, String facultyName, String departmentName) {
